@@ -29,7 +29,7 @@ app.use(express.static(`${__dirname}/public`));
  */
 
 // Importing the routes from the routes folder
-//middleware is called for this path whenever a request is made to this path
+//middleware is called for this path whenever a request is made to this path (parent route, and the route in route.js is its child : parent/child)
 app.use("/expressRoute/generallisedRoute1", one); //one is a middleware function
 
 module.exports = app; //exporting the app instance
